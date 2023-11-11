@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/untitled_1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525">
+
+        <EditText
+            android:id="@+id/rg_password"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableStart="@drawable/lockk"
+            android:drawableLeft="@drawable/lockk"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#F6F5F5"
+            android:textColorHint="#F3ECEC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.62" />
+
+        <EditText
+            android:id="@+id/rg_confirm_password"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableStart="@drawable/lockk"
+            android:drawableLeft="@drawable/lockk"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="#F6F5F5"
+            android:textColorHint="#F3ECEC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.83" />
+
+        <EditText
+            android:id="@+id/rg_email"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/white"
+
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#F6F5F5"
+            android:textColorHint="#F3ECEC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22" />
+
+        <EditText
+            android:id="@+id/rg_mobno"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/white"
+
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:textColor="#F6F5F5"
+            android:textColorHint="#F3ECEC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.42" />
+
+        <EditText
+            android:id="@+id/rg_username"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableStart="@drawable/pesson"
+            android:drawableLeft="@drawable/pesson"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_unique_id_email_id"
+            android:inputType="text"
+            android:textColor="#F6F5F5"
+            android:textColorHint="#F3ECEC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <RadioGroup
+            android:id="@+id/rg_rg"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98">
+
+            <RadioButton
+                android:id="@+id/rg_rd_br_2"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="Broker"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/rg_rd_ow_3"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="Owner"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/rg_rd_us_4"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="User"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/rg_btn"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borderbutton"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="#FBF9F9"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="tv_reset"
+        android:text="Forgot or Reset your Password?"
+        android:textColor="#EDE5E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

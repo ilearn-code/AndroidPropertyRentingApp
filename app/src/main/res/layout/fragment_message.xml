@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buttom_nav_fragments.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/message_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/message_tittle"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/baseline_search_24_message"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Search By Name"
+        android:paddingLeft="20dp"
+        android:background="@drawable/gray_search_button_shape"
+        />
+<!--<androidx.cardview.widget.CardView-->
+<!--    android:id="@+id/imagecardid"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_centerHorizontal="true"-->
+<!--    app:cardCornerRadius="13dp"-->
+<!--    app:cardBackgroundColor="#d0e1ea"-->
+<!--    android:layout_below="@id/search_edit"-->
+<!--    android:layout_marginTop="80dp"-->
+<!--    >-->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sasa"
+android:paddingEnd="5dp"
+        android:paddingLeft="25dp"
+        android:layout_below="@+id/search_edit"
+        android:layout_marginTop="80dp"
+
+        android:layout_centerHorizontal="true"/>
+<!--</androidx.cardview.widget.CardView>-->
+
+    <TextView
+        android:id="@+id/nomessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+android:layout_below="@id/imageView2"
+      android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="No Messages Yet"
+        />
+
+    <TextView
+    android:id="@+id/textnomessages2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+     android:layout_below="@+id/nomessage"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="looks like you have no messagees in you inbox. You can start now " />
+
+</RelativeLayout>

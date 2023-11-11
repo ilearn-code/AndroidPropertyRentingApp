@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+<ImageView
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_keyboard_backspace_24"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_alignParentTop="true"
+    />
+    <TextView
+        android:id="@+id/account_frag_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_frag_tittle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/change_pass_RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+            <ImageView
+                android:id="@+id/account_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_account_blue_24"
+                />
+            <TextView
+                android:id="@+id/acc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Changes Password"
+
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@id/account_ic"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_forward_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/account_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+
+            >
+            <ImageView
+                android:id="@+id/account_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_privacy_tip_24"
+                />
+            <TextView
+                android:id="@+id/acc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@id/account_ic"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_forward_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/account_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+            <ImageView
+                android:id="@+id/account_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_terms_24"
+                />
+            <TextView
+                android:id="@+id/acc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms &amp; Conditions"
+
+
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@id/account_ic"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_forward_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:elevation="16dp"
+                android:textSize="20dp"
+
+                android:textStyle="bold"
+                android:background="@color/skytransparent"
+                android:layout_marginTop="20dp"
+                android:text="@string/for_boys" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginTop="135dp"
+                android:layout_marginRight="17dp"
+
+                android:background="@color/skytransparent"
+                android:elevation="16dp"
+
+                android:text="@string/pid"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#812525"
+                android:scaleType="centerCrop"
+                android:src="@drawable/brochure" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:text="₹6/month"
+
+                android:textColor="#E64A19"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/bed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:text="Single Bed PG"
+
+                android:textStyle="bold"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/bed">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/baseline_location_on_24"
+                    />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bed"
+
+                    android:layout_marginTop="5dp"
+                    android:text="Phase 8"
+
+                    android:textColor="@color/DavysGray"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fully Furnished"
+                android:layout_below="@id/ll"
+                android:layout_marginLeft="16dp"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
